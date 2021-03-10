@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "23c0c79a-edaf-4fb8-a9d4-1842a4cb0c94",
+		"name": "node-postgres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Sales",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "werwerwe",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "5602",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/add-sales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"add-sales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Sales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/sales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sales from daily, weekly and monthly data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/sales/monthly",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sales",
+						"monthly"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
